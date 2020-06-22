@@ -1,6 +1,5 @@
 /** @format */
 
-console.log('???');
 // esta forma no es la mejor
 function saludar(nombre) {
 	return `Hola ${nombre}`;
@@ -55,15 +54,15 @@ console.log(usuarioActivo);
 // solucion
 //funcion flecha
 
-const getUserActivo = (nombre) => {
-	return {
-		uid: 'ABC567',
-		username: nombre,
-	};
-};
+// const getUserActivo = (nombre) => {
+// 	return {
+// 		uid: 'ABC567',
+// 		username: nombre,
+// 	};
+// };
 
 // return explici
-const getUserActivo = (nombre) => ({
-	uid: 'ABC567',
-	username: nombre,
-});
+// const getUserActivo = (nombre) => ({
+// 	uid: 'ABC567',
+// 	username: nombre,
+// });
