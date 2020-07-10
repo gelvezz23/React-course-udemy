@@ -1,7 +1,11 @@
 /** @format */
+// owners con expoer const
+// heroes con export default
+import heroes, { owners } from './../data/heroes';
 
-import { heroes } from './data/heroes';
-
+//otra forma
+// import  { heroes,owners } from './data/heroes';
+console.log(owners);
 console.log(heroes);
 
 // Buscar un heroe por id forma larga
