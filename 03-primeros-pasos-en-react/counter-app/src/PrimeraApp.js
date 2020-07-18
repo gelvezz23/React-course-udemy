@@ -2,8 +2,10 @@
 
 import React, { Fragment } from 'react';
 
-const PrimeraApp = () => {
+const PrimeraApp = ({ saludo = 'dato por defecto' }) => {
 	// para imprimirt variables
+
+	console.log(saludo);
 
 	const saludar = 'hola mundo con una variable ';
 	const variable = 123;
@@ -15,6 +17,9 @@ const PrimeraApp = () => {
 	return (
 		// este es un fragment abreviado
 		<>
+			{/* se puede hacer asi pero no se usa <h1>{props.saludo}</h1> */}
+			<h1>{saludo}</h1>
+			<p>esto es una props con destructuracion</p>
 			<h1>{saludar}</h1>
 			<p>Un saludo con variables</p>
 			<h1>{variable}</h1>
