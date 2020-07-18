@@ -1,6 +1,7 @@
 /** @format */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const PrimeraApp = ({ saludo }) => {
 	return (
@@ -11,6 +12,10 @@ const PrimeraApp = ({ saludo }) => {
 			<p>esto es una props con destructuracion</p>
 		</>
 	);
+};
+
+PrimeraApp.propTypes = {
+	saludo: PropTypes.string.isRequired,
 };
 
 export default PrimeraApp;
