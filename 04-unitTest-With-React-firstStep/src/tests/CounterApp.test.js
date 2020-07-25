@@ -43,7 +43,7 @@ describe('Prueba a <CounterApp/>', () => {
 
 		//.simulate('evento', {parametros}) sirve para simular un click en este boton
 		const btn2 = wrapper.find('button').at(2).simulate('click');
-		console.log(btn2.text());
+		// console.log(btn2.text());
 		const valor = wrapper.find('h2').text().trim();
 
 		expect(valor).toBe('22');
