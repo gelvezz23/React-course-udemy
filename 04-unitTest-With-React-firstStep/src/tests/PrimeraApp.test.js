@@ -25,4 +25,18 @@ describe('Pruebas en <PrimeraApp/>', () => {
 
 		expect(wrapper).toMatchSnapshot();
 	});
+
+	test('Debe de mostrar el subtitulo enviado por props', () => {
+		const saludo = 'hola';
+		const subTitulo = 'soy un texto';
+		const wrapper = shallow(<PrimeraApp saludo={saludo} subtitulo={subTitulo} />);
+
+		// debo recorrer el componente <PrimeraApp/>
+		// aqui el find funciona como un query selector
+		// donde se envia la etiqueta que queremos
+		// # = id, . = class
+		const textoParrafo = wrapper.find('p').text();
+		console.log(textoParrafo);
+		expect(textoParrafo).toBe(subTitulo);
+	});
 });
