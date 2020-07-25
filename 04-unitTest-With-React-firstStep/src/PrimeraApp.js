@@ -8,8 +8,8 @@ const PrimeraApp = ({ saludo, subtitulo }) => {
 		// este es un fragment abreviado
 		<>
 			{/* se puede hacer asi pero no se usa <h1>{props.saludo}</h1> */}
-			<h1>{saludo}</h1>
-			{/* <p>{subtitulo}</p> */}
+			<h1>{saludo} ...</h1>
+			<p>{subtitulo}</p>
 		</>
 	);
 };
