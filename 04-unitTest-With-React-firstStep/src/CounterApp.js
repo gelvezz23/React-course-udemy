@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-function CounterApp({ value }) {
+function CounterApp({ value = 23 }) {
 	const [counter, setCounter] = useState(value);
 
 	const handleAdd = () => {
